@@ -1,0 +1,9 @@
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.0\MiApp.Dominio.csprojAssemblyReference.cache
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.0\MiApp.Dominio.AssemblyInfoInputs.cache
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.0\MiApp.Dominio.AssemblyInfo.cs
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.0\MiApp.Dominio.csproj.CoreCompileInputs.cache
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\bin\Debug\netstandard2.0\MiApp.Dominio.deps.json
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\bin\Debug\netstandard2.0\MiApp.Dominio.dll
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\bin\Debug\netstandard2.0\MiApp.Dominio.pdb
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.0\MiApp.Dominio.dll
+C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.0\MiApp.Dominio.pdb
