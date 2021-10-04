@@ -29,17 +29,7 @@ namespace MiApp.Persistencia.Migrations
                     b.Property<string>("Observacion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PersonaId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("VehiculoId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PersonaId");
-
-                    b.HasIndex("VehiculoId");
 
                     b.ToTable("Accidentes");
                 });
@@ -50,6 +40,9 @@ namespace MiApp.Persistencia.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
+
+                    b.Property<int?>("AccidenteId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
@@ -69,6 +62,8 @@ namespace MiApp.Persistencia.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AccidenteId");
+
                     b.ToTable("Personas");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
@@ -81,6 +76,9 @@ namespace MiApp.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<int?>("AccidenteId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Marca")
                         .HasColumnType("int");
 
@@ -91,6 +89,8 @@ namespace MiApp.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AccidenteId");
 
                     b.ToTable("Vehiculos");
                 });
@@ -108,16 +108,22 @@ namespace MiApp.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("AgenteTransito");
                 });
 
+            modelBuilder.Entity("MiApp.Dominio.Persona", b =>
+                {
+                    b.HasOne("MiApp.Dominio.Accidente", null)
+                        .WithMany("Persona")
+                        .HasForeignKey("AccidenteId");
+                });
+
+            modelBuilder.Entity("MiApp.Dominio.Vehiculo", b =>
+                {
+                    b.HasOne("MiApp.Dominio.Accidente", null)
+                        .WithMany("Vehiculo")
+                        .HasForeignKey("AccidenteId");
+                });
+
             modelBuilder.Entity("MiApp.Dominio.Accidente", b =>
                 {
-                    b.HasOne("MiApp.Dominio.Persona", "Persona")
-                        .WithMany()
-                        .HasForeignKey("PersonaId");
-
-                    b.HasOne("MiApp.Dominio.Vehiculo", "Vehiculo")
-                        .WithMany()
-                        .HasForeignKey("VehiculoId");
-
                     b.Navigation("Persona");
 
                     b.Navigation("Vehiculo");
