@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj": {}
+    "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj": {
+    "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
+        "projectUniqueName": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
         "projectName": "MiApp.Dominio",
-        "projectPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\obj\\",
+        "projectPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
+        "packagesPath": "C:\\Users\\odaguilar\\.nuget\\packages\\",
+        "outputPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\odaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,10 +22,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -52,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj": {
+    "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj",
+        "projectUniqueName": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj",
         "projectName": "MiApp.Persistencia",
-        "projectPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\obj\\",
+        "projectPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\odaguilar\\.nuget\\packages\\",
+        "outputPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\odaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,13 +76,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj": {
-                "projectPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj"
+              "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj": {
+                "projectPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj"
               }
             }
           }
@@ -93,6 +96,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -130,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

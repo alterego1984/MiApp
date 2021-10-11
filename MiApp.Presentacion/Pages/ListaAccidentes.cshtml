@@ -1,0 +1,47 @@
+﻿@page
+@model MiApp.Presentacion.Pages.ListaAccidentesModel
+@{
+    <h1>Lista de Accidentes</h1>
+    <table class="table">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Observación
+            </th>
+            <th>
+                Vehículos
+            </th>
+            <th>
+                Personas
+            </th>
+            <th>
+                Observación
+            </th>
+        </tr>
+@foreach (var accidente in Model.Accidentes)
+{
+    <tr>
+        <td>@accidente.Id</td>
+        <td>@accidente.Observacion</td>
+        <td>
+            <a class="btn btn-success" asp-page="./ListaVehiculos" asp-route-accidenteId="@accidente.Id">
+                <i class="fa fa-car"></i>
+            </a>
+        </td>
+        <td>
+            <a class="btn btn-success" asp-page="./ListaPersonas" asp-route-accidenteId="@accidente.Id">
+                <i class="fa fa-male"></i>
+            </a>
+        </td>
+        <td>
+            <a class="btn btn-primary" asp-page="./Detalle" asp-route-accidenteId="@accidente.Id">
+                <i class="fa fa-search"></i> Detalle
+            </a>
+        </td>
+
+    </tr>
+}
+    </table>
+}

@@ -30,7 +30,7 @@ namespace MiApp.Persistencia.Migrations
                     Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Edad = table.Column<int>(type: "int", nullable: false),
                     Genero = table.Column<int>(type: "int", nullable: false),
-                    AccidenteId = table.Column<int>(type: "int", nullable: true),
+                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CodigoAgente = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FechaRegistro = table.Column<DateTime>(type: "datetime2", nullable: true)
@@ -38,12 +38,6 @@ namespace MiApp.Persistencia.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Personas", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Personas_Accidentes_AccidenteId",
-                        column: x => x.AccidenteId,
-                        principalTable: "Accidentes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,7 +49,7 @@ namespace MiApp.Persistencia.Migrations
                     Placa = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Modelo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Marca = table.Column<int>(type: "int", nullable: false),
-                    AccidenteId = table.Column<int>(type: "int", nullable: true)
+                    AccidenteId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -65,13 +59,44 @@ namespace MiApp.Persistencia.Migrations
                         column: x => x.AccidenteId,
                         principalTable: "Accidentes",
                         principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AccidentesPersonas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccidenteId = table.Column<int>(type: "int", nullable: true),
+                    PersonaId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AccidentesPersonas", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AccidentesPersonas_Accidentes_AccidenteId",
+                        column: x => x.AccidenteId,
+                        principalTable: "Accidentes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AccidentesPersonas_Personas_PersonaId",
+                        column: x => x.PersonaId,
+                        principalTable: "Personas",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Personas_AccidenteId",
-                table: "Personas",
+                name: "IX_AccidentesPersonas_AccidenteId",
+                table: "AccidentesPersonas",
                 column: "AccidenteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AccidentesPersonas_PersonaId",
+                table: "AccidentesPersonas",
+                column: "PersonaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Vehiculos_AccidenteId",
@@ -82,10 +107,13 @@ namespace MiApp.Persistencia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Personas");
+                name: "AccidentesPersonas");
 
             migrationBuilder.DropTable(
                 name: "Vehiculos");
+
+            migrationBuilder.DropTable(
+                name: "Personas");
 
             migrationBuilder.DropTable(
                 name: "Accidentes");

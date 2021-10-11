@@ -7,5 +7,7 @@ namespace MiApp.Dominio
         public string Apellidos {get;set;}
         public int Edad {get;set;}
         public Genero Genero {get;set;}
+        public string Documento {get; set;}
+        // public Tipo Tipo {get;set;}
     }
 }

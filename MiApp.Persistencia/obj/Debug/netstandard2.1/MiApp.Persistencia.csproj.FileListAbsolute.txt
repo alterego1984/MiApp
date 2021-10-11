@@ -10,3 +10,15 @@ C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Persistencia\bin\Debug\netstandard2.
 C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.csproj.CopyComplete
 C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.dll
 C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.pdb
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\bin\Debug\netstandard2.1\MiApp.Persistencia.deps.json
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\bin\Debug\netstandard2.1\MiApp.Persistencia.dll
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\bin\Debug\netstandard2.1\MiApp.Persistencia.pdb
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\bin\Debug\netstandard2.1\MiApp.Dominio.dll
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\bin\Debug\netstandard2.1\MiApp.Dominio.pdb
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.csproj.AssemblyReference.cache
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.AssemblyInfoInputs.cache
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.AssemblyInfo.cs
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.csproj.CoreCompileInputs.cache
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.csproj.CopyComplete
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.dll
+C:\Ejemplo\MiApp\MiApp\MiApp.Persistencia\obj\Debug\netstandard2.1\MiApp.Persistencia.pdb

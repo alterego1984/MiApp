@@ -34,7 +34,7 @@ namespace MiApp.Persistencia
             return accidenteEncontrado;
         }
 
-        public IEnumerable<Accidente> GetAllPersonas()
+        public IEnumerable<Accidente> GetAllAccidentes()
         {
             return _appContext.Accidentes;
         }
@@ -45,8 +45,8 @@ namespace MiApp.Persistencia
             if (accidenteEncontrado != null)
             {
                 accidenteEncontrado.Observacion = accidente.Observacion;
-                accidenteEncontrado.Persona = accidente.Persona;
-                accidenteEncontrado.Vehiculo = accidente.Vehiculo;
+                // accidenteEncontrado.Persona = accidente.Persona;
+                accidenteEncontrado.Vehiculos = accidente.Vehiculos;
                 _appContext.SaveChanges();
             }
             return accidenteEncontrado;

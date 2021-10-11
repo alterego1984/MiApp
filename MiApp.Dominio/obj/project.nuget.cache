@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkn/j/TLZQ0RD6qWD/z8uBKK6ArcJYOuZSFNvSHbhQCg4zbuO/9Q+OwqVK5edF0/zHvRP31izbau20IPC9QJyA==",
+  "dgSpecHash": "CRbxl7rTmKYvafkdRfLpOgZot7MVWjaQ/HLvZ2VdjeVD6NaVIPol178v/J18MDxEpb2har/xABEYYyN6aEHedQ==",
   "success": true,
-  "projectFilePath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
+  "projectFilePath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

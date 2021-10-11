@@ -34,7 +34,7 @@ namespace MiApp.Persistencia.Migrations
                     b.ToTable("Accidentes");
                 });
 
-            modelBuilder.Entity("MiApp.Dominio.Persona", b =>
+            modelBuilder.Entity("MiApp.Dominio.AccidentePersona", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -44,11 +44,33 @@ namespace MiApp.Persistencia.Migrations
                     b.Property<int?>("AccidenteId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PersonaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AccidenteId");
+
+                    b.HasIndex("PersonaId");
+
+                    b.ToTable("AccidentesPersonas");
+                });
+
+            modelBuilder.Entity("MiApp.Dominio.Persona", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Documento")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Edad")
@@ -62,8 +84,6 @@ namespace MiApp.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AccidenteId");
-
                     b.ToTable("Personas");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
@@ -76,7 +96,7 @@ namespace MiApp.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("AccidenteId")
+                    b.Property<int>("AccidenteId")
                         .HasColumnType("int");
 
                     b.Property<int>("Marca")
@@ -108,25 +128,35 @@ namespace MiApp.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("AgenteTransito");
                 });
 
-            modelBuilder.Entity("MiApp.Dominio.Persona", b =>
+            modelBuilder.Entity("MiApp.Dominio.AccidentePersona", b =>
                 {
-                    b.HasOne("MiApp.Dominio.Accidente", null)
-                        .WithMany("Persona")
+                    b.HasOne("MiApp.Dominio.Accidente", "Accidente")
+                        .WithMany()
                         .HasForeignKey("AccidenteId");
+
+                    b.HasOne("MiApp.Dominio.Persona", "Persona")
+                        .WithMany()
+                        .HasForeignKey("PersonaId");
+
+                    b.Navigation("Accidente");
+
+                    b.Navigation("Persona");
                 });
 
             modelBuilder.Entity("MiApp.Dominio.Vehiculo", b =>
                 {
-                    b.HasOne("MiApp.Dominio.Accidente", null)
-                        .WithMany("Vehiculo")
-                        .HasForeignKey("AccidenteId");
+                    b.HasOne("MiApp.Dominio.Accidente", "Accidente")
+                        .WithMany("Vehiculos")
+                        .HasForeignKey("AccidenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Accidente");
                 });
 
             modelBuilder.Entity("MiApp.Dominio.Accidente", b =>
                 {
-                    b.Navigation("Persona");
-
-                    b.Navigation("Vehiculo");
+                    b.Navigation("Vehiculos");
                 });
 #pragma warning restore 612, 618
         }

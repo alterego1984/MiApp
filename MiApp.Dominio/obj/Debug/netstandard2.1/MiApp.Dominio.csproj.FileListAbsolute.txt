@@ -7,3 +7,12 @@ C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiA
 C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.csproj.CoreCompileInputs.cache
 C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.dll
 C:\Proyectos Ciclo 3\MiProyecto\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.pdb
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\bin\Debug\netstandard2.1\MiApp.Dominio.deps.json
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\bin\Debug\netstandard2.1\MiApp.Dominio.dll
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\bin\Debug\netstandard2.1\MiApp.Dominio.pdb
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.csproj.AssemblyReference.cache
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.AssemblyInfoInputs.cache
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.AssemblyInfo.cs
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.csproj.CoreCompileInputs.cache
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.dll
+C:\Ejemplo\MiApp\MiApp\MiApp.Dominio\obj\Debug\netstandard2.1\MiApp.Dominio.pdb

@@ -39,11 +39,18 @@ namespace MiApp.Persistencia
             return personaEncontrado;
         }
 
-        // public Persona GetpersonaXNombre(string Nombre, string Apellido)
-        // {
-        //     var personaEncontrado = _appContext.Personas.Where(p => p.Nombres == Nombre && p.Apellidos==Apellido).FirstOrDefault();
-        //     return personaEncontrado;
-        // }
+        public Persona GetPersonaXDocumento(string idDocumento)
+        {
+            var personaEncontrado = _appContext.Personas.Where(p => p.Documento == idDocumento).FirstOrDefault();
+            return personaEncontrado;
+        }
+
+        public IEnumerable<Persona> GetPersonasXAccidente(int idAccidente)
+        {
+            var accidenteEncontrado=_appContext.Accidentes.Where(m=>m.Id==idAccidente).FirstOrDefault();
+            var personaEncontrado = _appContext.AccidentesPersonas.Where(p => p.Accidente == accidenteEncontrado).Select(m=> m.Persona);
+            return personaEncontrado;
+        }
 
         public Persona UpdatePersona(Persona persona)
         {
