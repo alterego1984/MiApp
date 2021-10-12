@@ -25,6 +25,7 @@ namespace MiApp.Presentacion
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MiApp.Persistencia.AppContext>();
+
             services.AddScoped<IRepositorioAccidente,RepositorioAccidente>();
             services.AddScoped<IRepositorioPersona,RepositorioPersona>();
             services.AddScoped<IRepositorioAccidentePersona,RepositorioAccidentePersona>();

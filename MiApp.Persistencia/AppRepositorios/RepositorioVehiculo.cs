@@ -15,7 +15,10 @@ namespace MiApp.Persistencia
 
         public IEnumerable<Vehiculo> GetVehiculosxAccidente(int idAccidente)
         {
-            return _appContext.Vehiculos.Where(m=>m.AccidenteId==idAccidente);
+            // var vehiculosEncontrados=_appContext.Vehiculos.Where(m=>m.AccidenteId==idAccidente);
+            // return vehiculosEncontrados;
+            var accidenteEncontrado = _appContext.Accidentes.Where(m => m.Id == idAccidente).Include(m => m.Vehiculos).FirstOrDefault();
+            return accidenteEncontrado.Vehiculos;
         }
         public Vehiculo AddVehiculo(Vehiculo vehiculo)
         {
@@ -49,6 +52,18 @@ namespace MiApp.Persistencia
         {
             var vehiculoEncontrado = _appContext.Vehiculos.Where(p => p.Id == idVehiculo).FirstOrDefault();
             return vehiculoEncontrado;
+        }
+
+        public int GetCantVehiculosxAccidente(string placa)
+        {
+            var vehiculosEncontrados = _appContext.Vehiculos.Where(m => m.Placa == placa).ToList();
+            return vehiculosEncontrados.Count();
+        }
+
+        public IEnumerable<Vehiculo> GetVehiculosxAccidentexPlaca(string placa)
+        {
+            var vehiculosEncontrados = _appContext.Vehiculos.Where(m => m.Placa == placa).Include(m=>m.Accidente);
+            return vehiculosEncontrados;
         }
     }
 }

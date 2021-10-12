@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\odaguilar\\.nuget\\packages\\": {}
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
+      "projectUniqueName": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
       "projectName": "MiApp.Dominio",
-      "projectPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
-      "packagesPath": "C:\\Users\\odaguilar\\.nuget\\packages\\",
-      "outputPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Dominio\\obj\\",
+      "projectPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\MiApp.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\odaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,11 +28,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "projectReferences": {}
         }
       },
@@ -44,7 +43,6 @@
     },
     "frameworks": {
       "netstandard2.1": {
-        "targetAlias": "netstandard2.1",
         "imports": [
           "net461",
           "net462",
@@ -60,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

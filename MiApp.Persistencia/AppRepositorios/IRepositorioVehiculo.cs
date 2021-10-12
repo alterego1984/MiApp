@@ -10,5 +10,7 @@ namespace MiApp.Persistencia
         Vehiculo UpdateVehiculo(Vehiculo vehiculo);
         void DeleteVehiculo(int idVehiculo);
         Vehiculo GetVehiculo(int idVehiculo);
+        int GetCantVehiculosxAccidente(string placa);
+        IEnumerable<Vehiculo> GetVehiculosxAccidentexPlaca(string placa);
     }
 }

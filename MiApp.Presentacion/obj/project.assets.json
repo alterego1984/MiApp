@@ -5737,19 +5737,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\odaguilar\\.nuget\\packages\\": {}
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Presentacion\\MiApp.Presentacion.csproj",
+      "projectUniqueName": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Presentacion\\MiApp.Presentacion.csproj",
       "projectName": "MiApp.Presentacion",
-      "projectPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Presentacion\\MiApp.Presentacion.csproj",
-      "packagesPath": "C:\\Users\\odaguilar\\.nuget\\packages\\",
-      "outputPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Presentacion\\obj\\",
+      "projectPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Presentacion\\MiApp.Presentacion.csproj",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\odaguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5757,14 +5757,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj": {
-              "projectPath": "C:\\Ejemplo\\MiApp\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj"
+            "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj": {
+              "projectPath": "C:\\Proyectos Ciclo 3\\MiProyecto\\MiApp\\MiApp.Persistencia\\MiApp.Persistencia.csproj"
             }
           }
         }
@@ -5777,7 +5776,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -5796,7 +5794,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

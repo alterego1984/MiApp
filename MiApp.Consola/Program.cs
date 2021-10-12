@@ -10,6 +10,7 @@ namespace MiApp.Consola
         private static IRepositorioPersona _repoPersona = new RepositorioPersona(new Persistencia.AppContext());
         private static IRepositorioAccidente _repoAccidente = new RepositorioAccidente(new Persistencia.AppContext());
         private static IRepositorioAccidentePersona _repoAccidentePersona = new RepositorioAccidentePersona(new Persistencia.AppContext());
+        private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("--------------------------------------");
@@ -27,16 +28,22 @@ namespace MiApp.Consola
             //     Console.WriteLine("No se encontró la persona");
             // }
 
-            IEnumerable<AccidentePersona> accidentespersonas = _repoAccidentePersona.GetAccidentePersonaxDocumento("5");
+            // IEnumerable<AccidentePersona> accidentespersonas = _repoAccidentePersona.GetAccidentePersonaxDocumento("5");
 
-            foreach (AccidentePersona item in accidentespersonas)
+            // foreach (AccidentePersona item in accidentespersonas)
+            // {
+            //     Console.WriteLine(item.Id);
+            // }
+            // Accidente accidenteNuevo = AddAccidente();
+            // Persona personaNueva1 = Crear_Actualizar_Persona();
+
+            // AddAccidentePersona(accidenteNuevo, personaNueva1);
+            IEnumerable<Vehiculo> vehiculos=_repoVehiculo.GetVehiculosxAccidentexPlaca("RWE123");
+            foreach (var vehiculo in vehiculos)
             {
-                Console.WriteLine(item.Id);
+                Console.WriteLine(vehiculo.Modelo + " - " + vehiculo.Accidente.Id.ToString() +" - "+ vehiculo.Accidente.Observacion);
             }
-            Accidente accidenteNuevo = AddAccidente();
-            Persona personaNueva1 = Crear_Actualizar_Persona();
-
-            AddAccidentePersona(accidenteNuevo, personaNueva1);
+            
         }
 
         private static void AddAccidentePersona(Accidente accidenteNuevo, Persona personaNueva)
